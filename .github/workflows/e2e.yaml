@@ -25,7 +25,7 @@ jobs:
       id-token: write
       contents: read
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Build Base Image
         uses: goplugin/pluginv3.0-github-actions/docker/build-push@ce87f8986ca18336cc5015df75916c2ec0a7c4b3 # v2.1.2
         with:
@@ -62,7 +62,7 @@ jobs:
     env:
       TEST_SUITE: local-runner
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Run Tests
         uses: goplugin/pluginv3.0-github-actions/plugin-testing-framework/run-tests@ce87f8986ca18336cc5015df75916c2ec0a7c4b3 # v2.1.2
         with:
@@ -95,7 +95,7 @@ jobs:
       TEST_SUITE: remote-runner
       TEST_TRIGGERED_BY: plugin-env-remote-runner-ci
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: Run Remote Runner Tests
         uses: goplugin/pluginv3.0-github-actions/plugin-testing-framework/run-tests@ce87f8986ca18336cc5015df75916c2ec0a7c4b3 # v2.1.2
         with:

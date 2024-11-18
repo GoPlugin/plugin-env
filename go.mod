@@ -8,7 +8,7 @@ require (
 	github.com/cdk8s-team/cdk8s-core-go/cdk8s/v2 v2.7.5
 	github.com/chaos-mesh/chaos-mesh/api/v1alpha1 v0.0.0-20220226050744-799408773657
 	github.com/go-resty/resty/v2 v2.7.0
-	github.com/google/uuid v1.3.0
+	github.com/google/uuid v1.6.0
 	github.com/imdario/mergo v0.3.13
 	github.com/onsi/gomega v1.20.1
 	github.com/pkg/errors v0.9.1
